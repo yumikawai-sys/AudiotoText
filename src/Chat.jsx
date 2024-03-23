@@ -92,13 +92,14 @@ function Chat({ socket, username }) {
 
   return (
     <div className="chatmain">
+      
       <div className="cameraArea">
-        <div>
+        <video ref={videoRef} autoPlay />
+        <div className="cameraButtons">
           <button onClick={startCamera}>Start Camera</button>
           <button onClick={startRecording} disabled={!mediaRecorder}>Start Recording</button>
           <button onClick={stopRecording} disabled={!mediaRecorder}>Stop Recording</button>
           <button onClick={downloadVideo} disabled={recordedChunks.length === 0}>Save Video</button>
-          <video ref={videoRef} autoPlay />
         </div>
       </div>
       <div className="chat-window">
