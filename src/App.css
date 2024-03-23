@@ -50,9 +50,25 @@ body {
   background: #2e7d32;
 }
 
+.chatmain {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.cameraArea {
+  width: 50vw;
+  height: 90vh;
+  margin: 10px;
+  border: solid 1px black;
+}
 .chat-window {
-  width: 300px;
-  height: 420px;
+  /* width: 300px;
+  height: 420px; */
+  width: 50vw;
+  height: 90vh;
+  margin: 10px;
 }
 
 .chat-window p {
@@ -74,7 +90,7 @@ body {
 }
 
 .chat-window .chat-body {
-  height: calc(450px - (45px + 70px));
+  height: calc(680px - (45px + 70px));
   border: 1px solid #263238;
   background: #fff;
 
